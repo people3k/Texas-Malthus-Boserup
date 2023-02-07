@@ -1,0 +1,111 @@
+This is a data file that accompanies ``Hunter-gatherer Population Expansion and Intensification: Malthusian and Boserupian Dynamics." The raw data used in the paper are contained in 7 data.csv files. This document describes the files and columns contained within.
+
+Files: 
+
+FinalRCDTexas2.csv.: This file contains all radiocarob ages associated with archaeological remains collected from Central Texas and the Texas Coastal Plain. 
+
+Site Name--name of archaeological site	
+Trinomial--unique trinomial for each site	
+Assay No.--unique id for lab and each radiocarbon smaple	
+Provenience--provenience of dated material if known
+Feature Type--archaeological feature from which material was recovered
+Material--material dated	
+Taxa dated-species or genera of data material	
+Human--yes or no. yes indicates human remains dated	
+DatesUse--raw uncrorrected radiocarbon age	
+Error--standard deviation of raw radiocarbon age	
+Corrected/Raw	
+Corrected/Normalized 14C age	 
+Corrected/Normalized Age	
+Delta 13C	
+Delta 13C source	
+Raw/Measured Age	 
+Raw/Measured Age	
+AMS or Radiometric	
+Comments	
+Reference
+Region--Central Texas =CTx, Coastal Plain=TCP
+
+
+
+SynthPapIso.csv: This file contains information on the stable isotopes of individuals buried in Central Texas and on the Texas Coastal Plain. 
+
+Site--Archaeological site name
+BurialNumber--Provenience of individuals at a site	
+DeltaC13Car--delta 13C apatitive values	
+DeltaC13Col--delata 13C collagen values	
+DeltaN--delata 15N collagen values	
+C_N--collagen to nitrogen ratio
+MidDate--median date of radiocarbon age on an individual or the median date of associated component for individuals	
+MidDate2--reciprocal of above	
+AgeID-- ID variable for averaging isotope values by 200 year time-steps
+CompID--Logistic growth component ID identified in the paper	
+PlusSigma	
+MinusSigma	
+Source	
+Setting--Central Texas =CTx, Coastal Plain=TCP
+
+
+
+SurfaceMeansFinal.csv: This file documents the surface area and mean raw radiocarbon ages and error of burned rock features.
+
+Site--Archaeological site by tinomial
+Feature--feature documented at the site	
+n-number of associated radiocarbon ages	
+RCYBP--mean raw radiocaron age BP	
+Error mean standard deviation of ages	
+MedCal--median calibrated radiocarbon age	
+SurfaceArea--surface area of feature	
+RockNumber--number of rocks recored in an excavated feature	
+RockWeight--weight of roack recored (kg)	
+CompID	-Logistic growth component ID identified in the paper
+SurfaceClust--designation of big (2) and small (1) features
+CultHist--Cultural historic Periods. B- Early Middle Archaic (8,400 to 5,700 Cal BP), C-Late Middle Archaic (5,699 to 4,200cal BP), D-Transitional Middle to Late Archaic (4,199 to 3,700 cal BP), E- Early Late Archaic (3,699 to 2,100 cal BP), F- Late early Archaic (2,099 to 1,300 Cal BP), G- Late Prehistoric I (1,299 to 700 cal BP), H- Late Prehistoric II (699 to 500 cal BP) and Transitional Prehistoric/Historic (499 to 300 cal BP).
+
+
+
+CTxIsotope200Final.csv and CTxIsotope200ImpFinal.csv: These files contain the time-series of SPDs, mean human bone isotope values, Modeled NPP, etc. in 200 year time-steps. The first file contains no imputed data and the second contains imputed data.
+
+
+calBP--two hundred year time-steps in cal BP.	
+DeltaC13Car--mean delta 13C apatitive values in a 200 year time step		
+DeltaC13Col--mean delata 13C collagen values in a 200 year time step		
+DeltaN--mean delata 15N collagen values	in a 200 year time step	
+n--number of individuals with isotope values in each time step	
+CompID--Logistic growth component ID identified in the paper	
+MAT--Modeld mean annual temperature per 200 year time-step	
+CRR--modeled mean annual rainfall	per 200 year time-step	
+NPP--mean NPP per 200 year time-step		
+PrDens--SPD values summed into 200 year time steps	
+lo--lower bound of confidence envelope fit of SPD for a four parameter logistic growth model	
+hi--upper bound of confidence envelope fit of SPD for a four parameter logistic growth model
+logFit3---Predicted fit of four parameter logistic growth model
+PrDensLag One time step lag	of SPD values summed into 200 year time steps	
+LnPrDensLag Natural log of PrDensLag 
+NPPLag--One time step lag of mean NPP per 200 year time-step
+DeltaC13CarLag One time step lag mean delta 13C apatitive values in a 200 year time step
+RockOven--Rank order of earth oven surface area	
+LnOvenArea--Natural log of earth oven surface area by cultural historical periods
+
+
+
+
+TCPIsotope200Final.csv and TCPIsotope200ImpFinal.csv: These files contain the time-series of SPDs, mean human bone isotope values, Modeled NPP, etc. in 200 year time-steps. The first file contains no imputed data and the second contains imputed data.
+
+calBP--two hundred year time-steps in cal BP.		
+DeltaC13Col--mean delata 13C collagen values in a 200 year time step		
+DeltaN--mean delata 15N collagen values	in a 200 year time step	
+n--number of individuals with isotope values in each time step	
+CompID--Logistic growth component ID identified in the paper	
+MAT--Modeld mean annual temperature per 200 year time-step	
+CRR--modeled mean annual rainfall	per 200 year time-step	
+NPP--mean NPP per 200 year time-step	
+Flood Events--Frequency of estuary flood events. 1= high frequency. 0= low frequency.
+PrDens--SPD values summed into 200 year time steps	
+lo--lower bound of confidence envelope fit of SPD for a four parameter logistic growth model	
+hi--upper bound of confidence envelope fit of SPD for a four parameter logistic growth model
+logFit2--Predicted fit of four parameter logistic growth model
+PrDensLag One time step lag	of SPD values summed into 200 year time steps	
+LnPrDensLag Natural log of PrDensLag 
+NPPLag--One time step lag of mean NPP per 200 year time-step
+DeltaNLag One time step lag mean delta 15N collagen values in a 200 year time step
